@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Example</title>
+    <style>
+        body {
+            background-image: url('main.webp'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+        }
+
+        .content {
+            color: white; 
+            text-align: center;
+            font-size: 24px;
+            padding: 20px;
+            background-color: rgb(230, 142, 142);
+            border-radius: 10px;
+            z-index: 2; /* Ensures it stays above the images */
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #hiddenParagraph {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            font-size: 18px;
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            width: 60%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 1px 1px #e64ccc;
+        }
+
+        /* Positioning the images in four corners */
+        .corner-img {
+            position: absolute;
+            width: 200px; /* Adjust size */
+            height: 200px; /* Adjust size */
+        }
+
+        .top-left { top: 40px; left: 40px; }
+        .top-right { top: 40px; right: 40px; }
+        .bottom-left { bottom: 40px; left: 40px; }
+        .bottom-right { bottom: 40px; right: 40px; }
+    </style>
+</head>
+<body>
+
+    <!-- Four images positioned in corners -->
+    <img src ="avaniya1.jpeg" class="corner-img top-left" alt="Top Left">
+    <img src="avaniya 2.jpeg" class="corner-img top-right" alt="Top Right">
+    <img src="avaniya 3.jpeg" class="corner-img bottom-left" alt="Bottom Left">
+    <img src="avaniya 4.jpeg" class="corner-img bottom-right" alt="Bottom Right">
+
+    <div class="content">
+        <h1 style="color: aliceblue;text-shadow: 3px 3px black;"><i>Welcome Wonderful Woman</i></h1>
+        <button onclick="showParagraph()">Click if your name is avani</button>
+        <p id="hiddenParagraph">Bonjour Mademoiselle,commmet allez-vous? this little parapgraph to emphasize on my love for you<br>
+            let me just start by saying that i love the way you smile and react to compliments and your face lights up.Youre amazing and you<br>
+            make me very very very happy.Youre an amazing girlfriend and bestfriend, i feel so comfortable living life with you.<br>
+            we have formed an unbreakable bond and nothing in this entire world will ever make me not love you.You mean the most to me and without<br>
+            you i feel maddddd sadd and mad anxious.Losing you is my biggest fear and i wanna spend my life with you being comfortable like this, doing<br>
+            gulu gulu before sleeping,fighting over small and big things, gifting things and trying to keep each other happy. You complete me and on this<br>
+            asupicious day of 8th february it is our 23rd month together and also propose day.Hence i am declaring my undying love for mybabygirl(you).<br>
+            <b><i>je t'aime tu es une fille magnifique</b></i></p>
+    </div>
+
+    <script>
+        function showParagraph() {
+            document.getElementById("hiddenParagraph").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
